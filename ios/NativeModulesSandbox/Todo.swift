@@ -25,13 +25,15 @@ class Todo: NSObject {
   func removeTodo(index: Int,
                   resolver: RCTPromiseResolveBlock,
                   rejector: RCTPromiseRejectBlock) -> [String] {
+    print("==========================")
+    print(index)
     todos.remove(at: index)
     return todos
   }
   
-  @objc(showTodos)
-  func showTodos() -> [String] {
-    return todos
+  @objc(showTodos:)
+  func showTodos(callback: RCTResponseSenderBlock) {
+    callback([nil, todos])
   }
 
 }

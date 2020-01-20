@@ -24,7 +24,15 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+import TodoManager from './TodoManager';
+
 const App: () => React$Node = () => {
+  console.log(TodoManager.showTodos((err, todos) => console.log(todos)));
+  TodoManager.addTodo('todo1').then(todos => console.log(todos));
+  TodoManager.addTodo('todo2').then(todos => console.log(todos));
+  TodoManager.addTodo('todo3').then(todos => console.log(todos));
+  TodoManager.removeTodo(1).then(todos => console.log(todos));
+
   return (
     <>
       <StatusBar barStyle="dark-content" />

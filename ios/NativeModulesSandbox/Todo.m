@@ -12,7 +12,7 @@
 @interface RCT_EXTERN_MODULE(Todo, NSObject)
 
 RCT_EXTERN_METHOD(addTodo:(NSString *)name resolver:(RCTPromiseResolveBlock)resolve rejector:(RCTPromiseRejectBlock)reject)
-RCT_EXTERN_METHOD(removeTodo:(NSNumber *)index resolver:(RCTPromiseResolveBlock)resolve rejector:(RCTPromiseRejectBlock)reject)
-RCT_EXTERN_METHOD(showTodos)
+RCT_EXTERN_METHOD(removeTodo:(NSInteger *)index resolver:(RCTPromiseResolveBlock)resolve rejector:(RCTPromiseRejectBlock)reject)
+RCT_EXTERN_METHOD(showTodos:(RCTResponseSenderBlock)callback)
 
 @end
