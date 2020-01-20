@@ -17,6 +17,8 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* NativeModulesSandboxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* NativeModulesSandboxTests.m */; };
+		A632845A23D5F49700C32625 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A632845923D5F49700C32625 /* Todo.swift */; };
+		A632845C23D5F94E00C32625 /* Todo.m in Sources */ = {isa = PBXBuildFile; fileRef = A632845B23D5F94D00C32625 /* Todo.m */; };
 		D2DC285FBF838DDF0FC7CD88 /* libPods-NativeModulesSandbox-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 050D965F1CE199315B0DB9A6 /* libPods-NativeModulesSandbox-tvOS.a */; };
 		D5EF22A393E15C5B4677ACCB /* libPods-NativeModulesSandbox-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 023D2A9ADB4B51DB23BBF413 /* libPods-NativeModulesSandbox-tvOSTests.a */; };
 		FECCD147ACB49B3EF2A50D9C /* libPods-NativeModulesSandboxTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6F7FC1CCF166C670FCBA3BE /* libPods-NativeModulesSandboxTests.a */; };
@@ -59,6 +61,9 @@
 		3E9A58DE9E98CCD3EFF5D9E4 /* Pods-NativeModulesSandbox-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeModulesSandbox-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-NativeModulesSandbox-tvOSTests/Pods-NativeModulesSandbox-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7CF40B4BB18D5F2E983096AF /* Pods-NativeModulesSandbox-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeModulesSandbox-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-NativeModulesSandbox-tvOSTests/Pods-NativeModulesSandbox-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		9C5B26215A22451F37912066 /* libPods-NativeModulesSandbox.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NativeModulesSandbox.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A632845823D5F49700C32625 /* NativeModulesSandbox-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NativeModulesSandbox-Bridging-Header.h"; sourceTree = "<group>"; };
+		A632845923D5F49700C32625 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Todo.swift; path = NativeModulesSandbox/Todo.swift; sourceTree = "<group>"; };
+		A632845B23D5F94D00C32625 /* Todo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Todo.m; path = NativeModulesSandbox/Todo.m; sourceTree = "<group>"; };
 		AD42386B3121848FBA3BA53A /* Pods-NativeModulesSandboxTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeModulesSandboxTests.release.xcconfig"; path = "Target Support Files/Pods-NativeModulesSandboxTests/Pods-NativeModulesSandboxTests.release.xcconfig"; sourceTree = "<group>"; };
 		AFBFDFE59228FB0450E5ACBC /* Pods-NativeModulesSandbox-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeModulesSandbox-tvOS.release.xcconfig"; path = "Target Support Files/Pods-NativeModulesSandbox-tvOS/Pods-NativeModulesSandbox-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		B6306C643210D08AFB16188C /* Pods-NativeModulesSandbox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeModulesSandbox.debug.xcconfig"; path = "Target Support Files/Pods-NativeModulesSandbox/Pods-NativeModulesSandbox.debug.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +137,9 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				A632845923D5F49700C32625 /* Todo.swift */,
+				A632845823D5F49700C32625 /* NativeModulesSandbox-Bridging-Header.h */,
+				A632845B23D5F94D00C32625 /* Todo.m */,
 			);
 			name = NativeModulesSandbox;
 			sourceTree = "<group>";
@@ -194,7 +202,6 @@
 				DAED1CC965CADF43F56729C9 /* Pods-NativeModulesSandboxTests.debug.xcconfig */,
 				AD42386B3121848FBA3BA53A /* Pods-NativeModulesSandboxTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -292,6 +299,9 @@
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
+					13B07F861A680F5B00A75B9A = {
+						LastSwiftMigration = 1130;
+					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
@@ -308,6 +318,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -529,7 +540,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				A632845A23D5F49700C32625 /* Todo.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				A632845C23D5F94E00C32625 /* Todo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,6 +595,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DAED1CC965CADF43F56729C9 /* Pods-NativeModulesSandboxTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -605,6 +619,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AD42386B3121848FBA3BA53A /* Pods-NativeModulesSandboxTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = NativeModulesSandboxTests/Info.plist;
@@ -626,6 +641,7 @@
 			baseConfigurationReference = B6306C643210D08AFB16188C /* Pods-NativeModulesSandbox.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				INFOPLIST_FILE = NativeModulesSandbox/Info.plist;
@@ -637,6 +653,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = NativeModulesSandbox;
+				SWIFT_OBJC_BRIDGING_HEADER = "NativeModulesSandbox-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -646,6 +665,7 @@
 			baseConfigurationReference = 28EB9D150414FAE1884F6A8B /* Pods-NativeModulesSandbox.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = NativeModulesSandbox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -656,6 +676,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = NativeModulesSandbox;
+				SWIFT_OBJC_BRIDGING_HEADER = "NativeModulesSandbox-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
